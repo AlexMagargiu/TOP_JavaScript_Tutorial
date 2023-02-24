@@ -1,3 +1,5 @@
+//  FUNDAMENTALS PART 1
+
 //let message = 'Hello!';
 //alert(message);
 
@@ -46,17 +48,55 @@
 //const BIRTHDAY = '18.04.1982';
 //const age = someCode(birthday);
 
-const myInt = 5;
-const myFloat = 6.667;
+//const myInt = 5;
+//const myFloat = 6.667;
 
-const lotsOfDecimal = 1.766584958675746364;
-const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+//const lotsOfDecimal = 1.766584958675746364;
+//const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
 
-let myNumber = "74";
-myNumber = Number(myNumber) + 3;
+//let myNumber = "74";
+//myNumber = Number(myNumber) + 3;
 
-const num1 = 10;
-const num2 = 50;
+//const num1 = 10;
+//const num2 = 50;
 
-let num3 = 4
-num3++;
+//let num3 = 4
+//num3++;
+
+let x = 1;
+x = -x;
+alert(x);
+
+let y = 1, z = 3;
+alert(z - y);
+
+alert(5 % 2);
+alert(8 % 3);
+alert(8 % 4);
+
+alert(2 ** 2);
+alert(2 ** 3);
+alert(2 ** 4);
+
+alert(4 ** (1/2));
+alert(8 ** (1/3));
+
+"" + 1 + 0 // 10
+"" - 1 + 0 // -1
+true + false // 1
+6 / "3" // 2
+"2" * "3" // 6
+4 + 5 + "px" // 9px
+"$" + 4 + 5 // $45
+"4" - 2 // 2
+"4px" - 2 // NaN
+"  -9  " + 5 //    -9  5
+"  -9  " - 5 // -14
+null + 1 // 1
+undefined + 1 // NaN
+" \t \n" - 2 // -2
+
+let a = prompt("First number?", 1);
+let b = prompt("Second number?", 2);
+
+alert( +a + +b); // 3
