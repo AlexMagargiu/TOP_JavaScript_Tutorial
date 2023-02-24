@@ -101,19 +101,58 @@
 
 //alert( +a + +b); // 3
 
-console.log(23 + 97);
+//console.log(23 + 97);
 
-console.log(13 + 14 + 15 + 16 + 17 + 18);
+//console.log(13 + 14 + 15 + 16 + 17 + 18);
 
-console.log((4 + 6 + 9) / 77);
+//console.log((4 + 6 + 9) / 77);
 
-let a = 10;
-console.log(a);
-console.log(9 * a);
-let b = 7 * a;
-console.log(b);
+//let a = 10;
+//console.log(a);
+//console.log(9 * a);
+//let b = 7 * a;
+//console.log(b);
 
-let max = 57;
-let actual = max - 13;
-let percentage = actual / max;
-console.log(percentage);
+//let max = 57;
+//let actual = max - 13;
+//let percentage = actual / max;
+//console.log(percentage);
+
+
+
+//FUNDAMENTALS PART 2
+
+const string = "The revolution will not be televised.";
+console.log(string);
+
+const sgl = 'Single quotes.';
+const dbl = "Double quotes";
+console.log(sgl);
+console.log(dbl);
+
+const sglDbl = 'Would you eat a "fish supper"?';
+const dblSgl = "I'm feeling blue.";
+console.log(sglDbl);
+console.log(dblSgl);
+
+const bigmouth = 'I\'ve got no right to take my place…';
+console.log(bigmouth);
+
+const name = "Chris";
+const greeting = `Hello, ${name}`;
+console.log(greeting);
+
+const one = "Hello, ";
+const two = "how are you?";
+const joined = `${one}${two}`;
+console.log(joined);
+
+const name2 = "Front ";
+const number = 242;
+console.log(`${name2}${number}`);
+
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100 }%.`;
+console.log(output);
