@@ -63,40 +63,57 @@
 //let num3 = 4
 //num3++;
 
-let x = 1;
-x = -x;
-alert(x);
+//let x = 1;
+//x = -x;
+//alert(x);
 
-let y = 1, z = 3;
-alert(z - y);
+//let y = 1, z = 3;
+//alert(z - y);
 
-alert(5 % 2);
-alert(8 % 3);
-alert(8 % 4);
+//alert(5 % 2);
+//alert(8 % 3);
+//alert(8 % 4);
 
-alert(2 ** 2);
-alert(2 ** 3);
-alert(2 ** 4);
+//alert(2 ** 2);
+//alert(2 ** 3);
+//alert(2 ** 4);
 
-alert(4 ** (1/2));
-alert(8 ** (1/3));
+//alert(4 ** (1/2));
+//alert(8 ** (1/3));
 
-"" + 1 + 0 // 10
-"" - 1 + 0 // -1
-true + false // 1
-6 / "3" // 2
-"2" * "3" // 6
-4 + 5 + "px" // 9px
-"$" + 4 + 5 // $45
-"4" - 2 // 2
-"4px" - 2 // NaN
-"  -9  " + 5 //    -9  5
-"  -9  " - 5 // -14
-null + 1 // 1
-undefined + 1 // NaN
-" \t \n" - 2 // -2
+//"" + 1 + 0 // 10
+//"" - 1 + 0 // -1
+//true + false // 1
+//6 / "3" // 2
+//"2" * "3" // 6
+//4 + 5 + "px" // 9px
+//"$" + 4 + 5 // $45
+//"4" - 2 // 2
+//"4px" - 2 // NaN
+//"  -9  " + 5 //    -9  5
+//"  -9  " - 5 // -14
+//null + 1 // 1
+//undefined + 1 // NaN
+//" \t \n" - 2 // -2
 
-let a = prompt("First number?", 1);
-let b = prompt("Second number?", 2);
+//let a = prompt("First number?", 1);
+//let b = prompt("Second number?", 2);
 
-alert( +a + +b); // 3
+//alert( +a + +b); // 3
+
+console.log(23 + 97);
+
+console.log(13 + 14 + 15 + 16 + 17 + 18);
+
+console.log((4 + 6 + 9) / 77);
+
+let a = 10;
+console.log(a);
+console.log(9 * a);
+let b = 7 * a;
+console.log(b);
+
+let max = 57;
+let actual = max - 13;
+let percentage = actual / max;
+console.log(percentage);
