@@ -122,7 +122,7 @@
 
 //FUNDAMENTALS PART 2
 
-const string = "The revolution will not be televised.";
+/*const string = "The revolution will not be televised.";
 console.log(string);
 
 const sgl = 'Single quotes.';
@@ -155,4 +155,12 @@ const song = "Fight the Youth";
 const score = 9;
 const highestScore = 10;
 const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100 }%.`;
-console.log(output);
+console.log(output);*/
+
+5 > 4 // true
+"apple" > "pineapple" // false
+"2" > "12" // true
+undefined == null // true
+undefined === null // false
+null == "\n0\n" // false
+null === +"\n0\n" // false
