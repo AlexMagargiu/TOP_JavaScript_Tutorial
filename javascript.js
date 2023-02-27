@@ -157,10 +157,56 @@ const highestScore = 10;
 const output = `I like the song ${song}. I gave it a score of ${(score / highestScore) * 100 }%.`;
 console.log(output);*/
 
-5 > 4 // true
+/* 5 > 4 // true
 "apple" > "pineapple" // false
 "2" > "12" // true
 undefined == null // true
 undefined === null // false
 null == "\n0\n" // false
-null === +"\n0\n" // false
+null === +"\n0\n" // false */
+
+//TASK 1    
+//Write an if condition to check that age is between 14 and 90 inclusively.
+//“Inclusively” means that age can reach the edges 14 or 90.
+let age = 25;
+if (age >= 14 && age <= 90){
+    alert("Valid age");
+}
+
+//TASK 2
+//Write an if condition to check that age is NOT between 14 and 90 inclusively.
+//Create two variants: the first one using NOT !, the second one – without it.
+//1.
+let age2 = 30;
+if (age2 <= 14 || age2 >= 90){
+    alert("Age not valid");
+}
+
+//2.
+let age3 = 35;
+if (!(age3 >= 14 && age3 <= 90)){
+    alert("Age not valid");
+}
+
+//TASK 3
+//Write the code which asks for a login with prompt.
+//If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled”, if it’s another string – then show “I don’t know you”.
+//The password is checked as follows:
+//If it equals “TheMaster”, then show “Welcome!”,
+//Another string – show “Wrong password”,
+//For an empty string or cancelled input, show “Canceled”
+let userName = prompt("Who's there?", '');
+if (userName === "Admin") {
+  let pass = prompt("Password?", '');
+  if (pass === "TheMaster") {
+    alert("Welcome!");
+  } else if (pass === '' || pass === null) {
+    alert("Canceled");
+  } else {
+    alert("Wrong password");
+  }
+} else if (userName === '' || userName === null) {
+  alert("Canceled");
+} else {
+  alert("I don't know you");
+}
