@@ -215,7 +215,7 @@ if (userName === "Admin") {
 //TASK 1 ANOTHER TUTORIAL
 //Using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’
 //If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
-let answer = prompt("What is the official name of JavaScript", "");
+/* let answer = prompt("What is the official name of JavaScript", "");
 if (answer === "ECMAScript"){
   alert("Right!");
 } else {
@@ -252,7 +252,7 @@ let result;
 //TASK 4
 //Rewrite if..else using multiple ternary operators '?'.
 //For readability, it’s recommended to split the code into multiple lines.
-/* let message;
+let message;
 if (login == 'Employee') {
   message = 'Hello';
 } else if (login == 'Director') {
@@ -263,4 +263,46 @@ if (login == 'Employee') {
   message = '';
 } */
 
-let message = (login === "Employee") ? "Hello" : (login === "Director") ? "Greetings" : (login === '') ? "No login" : '';
+//let message = (login === "Employee") ? "Hello" : (login === "Director") ? "Greetings" : (login === '') ? "No login" : ''; 
+
+
+//TASK 1 Functions
+//The following function returns true if the parameter age is greater than 18.
+//Otherwise it asks for a confirmation and returns its result.
+/* function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return confirm('Did parents allow you?');
+  }
+} */
+//Rewrite it, to perform the same, but without if, in a single line.
+//Make two variants of checkAge:
+//Using a question mark operator ?
+//Using OR ||
+
+//1.
+function checkAge(age){
+  return (age > 18) ? true : confirm("Did your parent allow you?");
+}
+
+//2.
+function checkAge2(age){
+  return (age > 18) || confirm("Did you parents allow you");
+}
+
+//TASK 2 Functions
+//Write a function min(a,b) which returns the least of two numbers a and b.
+//For instance:
+//min(2, 5) == 2
+//min(3, -1) == -1
+//min(1, 1) == 1
+
+function min(a,b){
+  if (a < b){
+    return a;
+  } else {
+  return b;
+  }
+}
+
