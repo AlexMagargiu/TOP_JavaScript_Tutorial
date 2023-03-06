@@ -8,8 +8,28 @@
     <title>TOP JavaScript Tutorial</title>
   </head>
   <body>
-    <!-- <script>
-       console.log("Hello, World!");
-    </script> -->
+    <script>
+      function add7(n) {
+        return n + 7;
+      }
+      console.log(add7(16));
+
+      function multiply(x, y) {
+        return x * y;
+      }
+      console.log(multiply(10, 5));
+
+      function capitalize(z) {
+        const capitalized = z.charAt(0).toUpperCase() + z.slice(1);
+        return capitalized;
+      }
+      console.log(capitalize("alex"));
+
+      function lastLetter(q) {
+        const lLetter = q.slice(-1);
+        return lLetter;
+      }
+      console.log(lastLetter("abcd"));
+    </script>
   </body>
 </html>
