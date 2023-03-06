@@ -282,7 +282,7 @@ if (login == 'Employee') {
 //Using OR ||
 
 //1.
-function checkAge(age){
+/* function checkAge(age){
   return (age > 18) ? true : confirm("Did your parent allow you?");
 }
 
@@ -304,5 +304,28 @@ function min(a,b){
   } else {
   return b;
   }
+} */
+
+//TASK 1 ARROW FUNCTIONS
+/* Replace Function Expressions with arrow functions in the code below:
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
 }
 
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+); */
+
+function aks(question, yes, no){
+  if(confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  () => alert("You agreed"),
+  () => alert("You didn't agree")
+);
