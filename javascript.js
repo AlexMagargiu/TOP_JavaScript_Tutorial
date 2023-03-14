@@ -330,7 +330,7 @@ ask(
   () => alert("You didn't agree")
 ); */
 
-const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
+/* const cats = ['Leopard', 'Serval', 'Jaguar', 'Tiger', 'Caracal', 'Lion'];
 
 for (const cat of cats) {
   console.log(cat);
@@ -369,5 +369,53 @@ for (const person of people) {
   } else {
     admitted.textContent += `${person}, `;
   }
-}
+} */
 
+//For every loop iteration, write down which value it outputs and then compare it with the solution.
+//Both loops alert the same values, or not?
+//The prefix form ++i:
+//let i = 0;
+//while (++i < 5) alert( i );
+//1. 1 < 5 true i = 1
+//2. 2 < 5 true i = 2
+//3. 3 < 5 true i = 3
+//4. 4 < 5 true i = 4
+//5. 5 < 5 false 
+//=> i = 4
+
+//The postfix form j++
+//let j = 0;
+//while (j++ < 5) alert( j );
+//1. 0 < 5 true j = 1
+//2. 1 < 5 true j = 2
+//3. 2 < 5 true j = 3
+//4. 3 < 5 true j = 4
+//5. 4 < 5 true j = 5
+//6. 5 < 5 false 
+//=> j = 5
+
+//Use the for loop to output even numbers from 2 to 10.
+/* for (let i = 2; i <= 10; i++){
+  if (i % 2 === 0){
+    alert(i);
+  }
+} */
+
+//Rewrite the code changing the for loop to while without altering its behavior (the output should stay same).
+/* for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+} */
+
+/* let i = 0;
+while (i < 3){
+  alert( `number ${i}!` );
+  i++;
+} */
+
+//Write a loop which prompts for a number greater than 100. If the visitor enters another number – ask them to input again.
+//The loop must ask for a number until either the visitor enters a number greater than 100 or cancels the input/enters an empty line.
+//Here we can assume that the visitor only inputs numbers. There’s no need to implement a special handling for a non-numeric input in this task.
+let number;
+while (number >= 100 && number){
+  number = prompt("Input a number greater than 100", "0");
+}
